@@ -1,8 +1,6 @@
 <template>
   <div>
       <NavigationSection />
-
-      <router-link class="p-2" to="/">Главная</router-link>
       <router-view class="main-view"></router-view>
 
 
@@ -25,6 +23,10 @@ export default {
 
 html, body {
   font-family: 'Manrope', 'Open Sans' sans-serif;
+}
+.container {
+  width: 1200px !important;
+  margin: 0 auto;
 }
 
 #app {

@@ -1,19 +1,18 @@
 <template>
-  <div class="wrapper-navigation position-relative">
-    <div class="bg-nav"><img src="@/assets/bg-nav.png" alt=""></div>
-    <BContainer>
-      <div class="d-flex align-items-center justify-content-between">
-        <div>
+  <div>
+    <div class="container position-relative">
+      <div class="d-flex align-items-center justify-content-between wrapper-position">
+        <router-link to="/">
           <img src="@/assets/Logo.svg" alt="logo">
-        </div>
+        </router-link>
         <div class="nav-link">
           <a href="#">Product</a>
           <a href="#">Services</a>
-          <a href="#">About</a>
+          <router-link  to="/about">About</router-link>
           <button class="nav-btn">Log In</button>
         </div>
       </div>
-    </BContainer>
+    </div>
   </div>
 </template>
 
@@ -24,13 +23,6 @@ export default {
 </script>
 
 <style scoped>
-.wrapper-navigation {
-  padding-top: 56px;
-  width: 100%;
-  height: 800px;
-  background-color: #0A2640;
-  z-index: -2;
-}
 .nav-link a {
   margin-right: 40px;
   font-family: 'Open Sans';
@@ -41,6 +33,7 @@ export default {
   color: #fff;
   text-decoration: none;
 }
+
 .nav-btn {
   background-color: #fff;
   border-radius: 24px;
@@ -52,10 +45,11 @@ export default {
   line-height: 24px;
   border: none;
 }
-.bg-nav {
+.wrapper-position {
+  padding-top: 56px;
   position: absolute;
-  top:0;
-  right: 0;
-  z-index: -1;
+  top: 0;
+  left: 0.75rem;
+  right: 0.75rem;
 }
 </style>
