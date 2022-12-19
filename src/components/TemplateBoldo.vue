@@ -73,9 +73,7 @@ export default {
   margin-right: 24px;
 }
 
-.wrapper-btn :hover {
-  background-color: #69E6A6;
-}
+
 .wrapper-logos {
   margin-top: 56px;
   display: flex;

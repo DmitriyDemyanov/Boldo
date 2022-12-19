@@ -27,6 +27,9 @@ export default {
   line-height: 28px;
   padding: 16px 56px;
 }
+.btn:hover {
+  background-color: #69E6A6;
+}
 .btn-dark {
   background: #0A2640;
   border: 2px solid #ffffff;
