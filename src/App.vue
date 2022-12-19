@@ -29,6 +29,12 @@ html, body {
   margin: 0 auto;
 }
 
+.container-common {
+  width: 1200px !important;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
 #app {
   font-family:'Manrope', 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
