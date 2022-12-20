@@ -18,7 +18,9 @@
 
       </MainInfoSection>
       <MainConnectSection/>
+      <BestPartners/>
     </div>
+    <EnterpriseTemplate/>
   </div>
 </template>
 
@@ -27,6 +29,8 @@ import TemplateBoldo from '@/components/TemplateBoldo';
 import MainInfoSection from '@/components/MainInfoSection';
 import MainCardComponent from '@/components/MainCardComponent';
 import MainConnectSection from '@/components/MainConnectSection';
+import BestPartners from '@/components/BestPartners';
+import EnterpriseTemplate from '@/components/EnterpriseTemplate';
 
 const myCards = [
   {
@@ -56,6 +60,8 @@ export default {
     MainInfoSection,
     MainCardComponent,
     MainConnectSection,
+    BestPartners,
+    EnterpriseTemplate,
   },
   cards: myCards
 }

@@ -12,7 +12,7 @@
         We connect our customers with the best, and help them keep up-and stay
         open.
       </div>
-      <OurConnectCostumers
+      <OurConnectCustumers
         :title="text"
         v-for="(text, ind) in title"
         :key="ind"
@@ -25,12 +25,12 @@
 </template>
 
 <script>
-import OurConnectCostumers from "@/components/OurConnectCostumers";
+import OurConnectCustumers from "@/components/OurConnectCustumers";
 import ButtonMain from "./ButtonMain.vue";
 export default {
   name: "MainConnectSection",
   components: {
-    OurConnectCostumers,
+    OurConnectCustumers,
     ButtonMain,
   },
   data() {

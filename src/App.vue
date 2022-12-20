@@ -23,6 +23,7 @@ export default {
 
 html, body {
   font-family: 'Manrope', 'Open Sans' sans-serif;
+  background-color: #E5E5E5;
 }
 .container {
   width: 1200px !important;
@@ -35,11 +36,5 @@ html, body {
   padding: 0 50px;
 }
 
-#app {
-  font-family:'Manrope', 'Open Sans', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+
 </style>
