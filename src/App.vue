@@ -1,18 +1,22 @@
 <template>
   <div>
-      <NavigationSection />
-      <router-view class="main-view"></router-view>
-
-
+    <NavigationSection />
+    <router-view class="main-view"></router-view>
+    <FooterWindow/>
+    <FooterSection/>
   </div>
 </template>
 
 <script>
 import NavigationSection from '@/components/NavigationSection';
+import FooterWindow from '@/components/FooterWindow';
+import FooterSection from '@/components/FooterSection';
 export default {
   name: 'App',
   components: {
     NavigationSection,
+    FooterWindow,
+    FooterSection,
   }
 }
 </script>
@@ -34,6 +38,12 @@ html, body {
   width: 1200px !important;
   margin: 0 auto;
   padding: 0 50px;
+}
+
+.container-short {
+  width: 1200px !important;
+  margin: 0 auto;
+  padding: 0 100px;
 }
 
 
