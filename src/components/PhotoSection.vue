@@ -17,7 +17,7 @@ name: 'PhotoSection',
 <style scoped>
 .grid-container {
   margin-top: -96px;
-
+  margin-bottom: 118px;
   display: grid;
   grid-template-columns: 3fr 4fr 3fr;
   grid-template-rows: min(285px) min(285px);
@@ -28,10 +28,12 @@ name: 'PhotoSection',
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 24px;
 }
 #photo-3 {
   grid-column-start: 2;
   grid-row-start: 1;
   grid-row-end: 3;
+
 }
 </style>

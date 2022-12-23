@@ -20,11 +20,32 @@ export default {
         fullName: 'Harry Potter',
         descr: 'Team Leader @ Gryffindor',
       },
+    ],
+    liaderManager: [
+      {
+        img: 'liader-1',
+        fullName: 'Michael Scott',
+        position: 'general manager'
+      },
+      {
+        img: 'liader-2',
+        fullName: 'Dwight Schrute',
+        position: 'general manager'
+      },
+      {
+        img: 'liader-3',
+        fullName: 'Pam Beetsley',
+        position: 'general manager'
+      },
     ]
   },
   getters: {
     getManagerSkill({ itemsManager }) {
-      return itemsManager
+      return itemsManager;
     },
+    getLiaderManager({ liaderManager }) {
+      return liaderManager;
+    }
   },
+
 };
