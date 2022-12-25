@@ -14,12 +14,13 @@
     <div class="container-common position-relative">
       <PhotoSection />
     </div>
-    <TemplateSectionsTitle :story="getStory" color="dark" />
+    <TemplateSectionsTitle :story="getStory"/>
     <OurNumbers />
-    <TemplateSectionsTitle :story="getTeam" color="dark" />
+    <TemplateSectionsTitle :story="getTeam"/>
     <div class="container-short d-flex justify-content-between wrapper-leader">
       <GeneralManager :manager="item" v-for="(item, index) in getLiaderManager" :key="index" />
     </div>
+    <BeliveSection/>
   </div>
 
 </template>
@@ -29,6 +30,7 @@ import PhotoSection from '@/components/PhotoSection';
 import TemplateSectionsTitle from '@/components/TemplateSectionsTitle';
 import OurNumbers from '@/components/OurNumbers';
 import GeneralManager from '@/components/GeneralManager';
+import BeliveSection from '@/components/BeliveSection';
 
 import { mapGetters } from 'vuex';
 export default {
@@ -38,6 +40,7 @@ export default {
     TemplateSectionsTitle,
     OurNumbers,
     GeneralManager,
+    BeliveSection,
   },
   computed: {
     ...mapGetters('templateTitles', ['getStory', 'getTeam', 'getValue']),

@@ -2,7 +2,7 @@
   <div class="wrapper-text container-small " :class="`wrapper-text-${color}`">
     <div  class="subtitle">{{ story.subtitle }}</div>
     <div class="title" :class="`title-${color}`">{{ story.title }}</div>
-    <div class="description">{{ story.descr }} </div>
+    <div class="description" :class="`description-${color}`">{{ story.descr }} </div>
   </div>
 </template>
 
@@ -35,8 +35,11 @@ export default {
   line-height: 32px;
   color: #777777;
 
+  .description-dark {
+    color: #F1F1F1;
+  }
   .title-dark {
-    color: orange;
+    color: #fff;
   }
 
 }
@@ -51,7 +54,7 @@ export default {
   color: #000000;
 }
 .wrapper-text-dark {
-  color: green;
+  color: #fff;
 }
 
 </style>
