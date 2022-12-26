@@ -64,7 +64,7 @@ const menus = [
     links: [
       {
         name: 'Blog',
-        path: '/Blog'
+        path: '/blog'
       },
       {
         name: 'Products',

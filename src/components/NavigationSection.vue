@@ -1,15 +1,16 @@
 <template>
-  <div>
+  <div :class="classBasedOnRoute">
     <div class="container position-relative">
       <div class="d-flex align-items-center justify-content-between wrapper-position">
         <router-link to="/">
-          <img src="@/assets/Logo.svg" alt="logo">
+          <img v-if="classBasedOnRoute === 'path-name-blog'" src="@/assets/Logo-black.svg" alt="logo">
+          <img v-else src="@/assets/Logo.svg" alt="logo">
         </router-link>
         <div class="nav-link">
           <a href="#">Product</a>
           <a href="#">Services</a>
           <router-link  to="/about">About</router-link>
-          <button class="nav-btn">Log In</button>
+          <button :class="classBasedOnRoute" class="nav-btn">Log In</button>
         </div>
       </div>
     </div>
@@ -19,10 +20,16 @@
 <script>
 export default {
   name: 'NavigationSection',
+  computed: {
+    classBasedOnRoute() {
+      console.log(this.$route);
+      return `path-name-${this.$route.name}`;
+    }
+  }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .nav-link a {
   margin-right: 40px;
   font-family: 'Open Sans';
@@ -51,5 +58,18 @@ export default {
   top: 0;
   left: 0.75rem;
   right: 0.75rem;
+}
+
+.path-name-blog {
+  .nav-link a {
+    color: #0A2640;
+  }
+  .nav-btn {
+    border: 2px solid #000;
+    &:hover {
+      background-color: #65E4A3;;
+    }
+
+  }
 }
 </style>

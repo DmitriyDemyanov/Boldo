@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper-text container-small " :class="`wrapper-text-${color}`">
     <div  class="subtitle">{{ story.subtitle }}</div>
-    <div class="title" :class="`title-${color}`">{{ story.title }}</div>
-    <div class="description" :class="`description-${color}`">{{ story.descr }} </div>
+    <div class="title">{{ story.title }}</div>
+    <div class="description">{{ story.descr }} </div>
   </div>
 </template>
 
@@ -34,14 +34,6 @@ export default {
   font-size: 20px;
   line-height: 32px;
   color: #777777;
-
-  .description-dark {
-    color: #F1F1F1;
-  }
-  .title-dark {
-    color: #fff;
-  }
-
 }
 
 .title {
@@ -55,6 +47,12 @@ export default {
 }
 .wrapper-text-dark {
   color: #fff;
+  .description {
+    color: #F1F1F1;
+  }
+  .title {
+    color: #fff;
+  }
 }
 
 </style>

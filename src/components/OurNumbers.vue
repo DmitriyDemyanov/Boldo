@@ -2,21 +2,15 @@
   <div class="wrapper-section">
     <div class="subtitle">Our numbers</div>
     <div class="title">Handshake infographic mass market<br> crowdfunding iteration.</div>
-    <div class="container-short">
-      <div class="wrapper-numbers d-flex justify-content-between">
+    <div class="container-short wrapper-numbers d-flex justify-content-between">
 
-
-        <div v-for="(item, index) in numbers" :key="index">
-          <div class="number">{{ item.num }}</div>
-          <div class="descr-num">Cool feature title</div>
-        </div>
-
-
-
+      <div v-for="(item, index) in numbers" :key="index">
+        <div class="number">{{ item.num }}</div>
+        <div class="descr-num">Cool feature title</div>
       </div>
+
     </div>
   </div>
-
 </template>
 
 <script>

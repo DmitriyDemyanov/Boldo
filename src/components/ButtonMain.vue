@@ -8,7 +8,7 @@ export default {
   props: {
     buttonStyles: {
       type: String,
-      required: true,
+      default: 'light'
     },
     buttonText: {
       type: String,

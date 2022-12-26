@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="img">
+    <div>
       <img :src="require(`@/assets/${manager.img}.png`)" alt="photo">
     </div>
     <div class="full-name">{{ manager.fullName }}</div>

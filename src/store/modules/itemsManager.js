@@ -21,7 +21,7 @@ export default {
         descr: 'Team Leader @ Gryffindor',
       },
     ],
-    liaderManager: [
+    leaderManager: [
       {
         img: 'liader-1',
         fullName: 'Michael Scott',
@@ -43,8 +43,8 @@ export default {
     getManagerSkill({ itemsManager }) {
       return itemsManager;
     },
-    getLiaderManager({ liaderManager }) {
-      return liaderManager;
+    getLeaderManager({ leaderManager }) {
+      return leaderManager;
     }
   },
 

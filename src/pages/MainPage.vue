@@ -38,6 +38,7 @@
       <MainInfoSection subtitle="Our Blog" title="Value proposition accelerator product management venture">
         <template v-slot:body>
           <div class="d-flex justify-content-between mb-3">
+
             <MainCardComponent :type-of-card="'small'" :myCard="card" v-for="(card, idx) in $options.blogCards" :key="idx">
               <template v-slot:card-footer>
                 <div class="d-flex blogger">
@@ -48,6 +49,7 @@
                 </div>
               </template>
             </MainCardComponent>
+
           </div>
         </template>
       </MainInfoSection>

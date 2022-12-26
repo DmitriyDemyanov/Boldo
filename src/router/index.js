@@ -3,6 +3,7 @@ import Vue from "vue";
 
 import MainPage from '@/pages/MainPage';
 import AboutPage from '@/pages/AboutPage';
+import BlogPage from '@/pages/BlogPage';
 
 
 Vue.use(VueRouter);
@@ -17,6 +18,11 @@ const routes = [
     path: "/about",
     name: "about-us",
     component: AboutPage,
+  },
+  {
+    path: "/blog",
+    name: "blog",
+    component: BlogPage,
   }
 ];
 

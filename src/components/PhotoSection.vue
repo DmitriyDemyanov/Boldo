@@ -1,10 +1,10 @@
 <template>
   <div class="grid-container">
-    <img id="photo-1" src="@/assets/photo-1.png" alt="photo">
-    <img id="photo-2" src="@/assets/photo-2.png" alt="photo">
-    <img id="photo-3" src="@/assets/photo-3.png" alt="photo">
-    <img id="photo-4" src="@/assets/photo-4.png" alt="photo">
-    <img id="photo-5" src="@/assets/photo-5.png" alt="photo">
+    <img src="@/assets/photo-1.png" alt="photo">
+    <img src="@/assets/photo-2.png" alt="photo">
+    <img id="photo-big" src="@/assets/photo-3.png" alt="photo">
+    <img src="@/assets/photo-4.png" alt="photo">
+    <img src="@/assets/photo-5.png" alt="photo">
   </div>
 </template>
 
@@ -30,10 +30,9 @@ name: 'PhotoSection',
   object-fit: cover;
   border-radius: 24px;
 }
-#photo-3 {
+#photo-big {
   grid-column-start: 2;
   grid-row-start: 1;
   grid-row-end: 3;
-
 }
 </style>

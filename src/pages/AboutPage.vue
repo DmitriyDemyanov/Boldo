@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="bg-header">
       <div class="container-common">
         <div class="wrap-text">
@@ -11,16 +12,23 @@
         </div>
       </div>
     </div>
+
     <div class="container-common position-relative">
       <PhotoSection />
     </div>
+
     <TemplateSectionsTitle :story="getStory"/>
+
     <OurNumbers />
+
     <TemplateSectionsTitle :story="getTeam"/>
+
     <div class="container-short d-flex justify-content-between wrapper-leader">
-      <GeneralManager :manager="item" v-for="(item, index) in getLiaderManager" :key="index" />
+      <GeneralManager :manager="item" v-for="(item, index) in getLeaderManager" :key="index" />
     </div>
+
     <BeliveSection/>
+
   </div>
 
 </template>
@@ -44,7 +52,7 @@ export default {
   },
   computed: {
     ...mapGetters('templateTitles', ['getStory', 'getTeam', 'getValue']),
-    ...mapGetters('itemsManager', ['getLiaderManager']),
+    ...mapGetters('itemsManager', ['getLeaderManager']),
   }
 
 }
